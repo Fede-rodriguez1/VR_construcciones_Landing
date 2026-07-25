@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es" class="lenis">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR Construcciones — Arquitectura &amp; Construcción de Excelencia</title>
+  <meta name="description" content="VR Construcciones es un estudio de arquitectura y construcción especializado en proyectos de alta calidad. Descubrí nuestros proyectos innovadores y diseños que perduran.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader__logo">VR Construcciones</div>
+    <div class="loader__bar">
+      <div class="loader__bar-inner"></div>
+    </div>
+    <div class="loader__counter">0%</div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">VR Construcciones</a>
+    <span class="nav__est">EST — 2024</span>
+    <button class="nav__menu-btn" aria-label="Abrir menú">
+      <span>Menú</span>
+      <div class="nav__menu-btn-lines">
+        <span class="nav__menu-btn-line"></span>
+        <span class="nav__menu-btn-line"></span>
+      </div>
+    </button>
+  </nav>
+
+  <!-- Menu Overlay -->
+  <div class="menu-overlay">
+    <div class="menu-overlay__content container">
+      <nav class="menu-overlay__nav">
+        <a href="index.html" class="menu-overlay__link">
+          <span class="menu-overlay__link-num">01</span>
+          Inicio
+        </a>
+        <a href="about.html" class="menu-overlay__link">
+          <span class="menu-overlay__link-num">02</span>
+          Nosotros
+        </a>
+        <a href="projects.html" class="menu-overlay__link">
+          <span class="menu-overlay__link-num">03</span>
+          Proyectos
+        </a>
+        <a href="services.html" class="menu-overlay__link">
+          <span class="menu-overlay__link-num">04</span>
+          Servicios
+        </a>
+        <a href="contact.html" class="menu-overlay__link">
+          <span class="menu-overlay__link-num">05</span>
+          Contacto
+        </a>
+      </nav>
+      <div class="menu-overlay__info">
+        <div class="menu-overlay__info-group">
+          <h4>Contacto</h4>
+          <p>
+            <a href="mailto:info@vrconstrucciones.com">info@vrconstrucciones.com</a><br>
+            <a href="tel:+59891234567">+598 91 234 567</a>
+          </p>
+        </div>
+        <div class="menu-overlay__info-group">
+          <h4>Oficina</h4>
+          <p>Maldonado, Uruguay</p>
+        </div>
+        <div class="menu-overlay__info-group">
+          <h4>Horario</h4>
+          <p>Lunes a Viernes, 9:00 – 18:00</p>
+        </div>
+        <div class="menu-overlay__info-group">
+          <h4>Seguinos</h4>
+          <div class="menu-overlay__socials">
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__bg-image img-placeholder" style="min-height: 100vh; font-size: 1rem;">Imagen Hero — Proyecto Principal</div>
+      <div class="hero__bg-overlay"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__label">Arquitectura &amp; Construcción</div>
+      <h1 class="hero__title">
+        <span class="line"><span class="line-inner">Construimos</span></span>
+        <span class="line"><span class="line-inner">el Futuro</span></span>
+      </h1>
+      <p class="hero__description">
+        Comprometidos con la excelencia en cada proyecto, combinando diseño innovador
+        con técnicas constructivas de vanguardia para crear espacios que trascienden.
+      </p>
+    </div>
+    <div class="hero__scroll">
+      <span class="hero__scroll-text">Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Tradition / Heritage Section -->
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div class="split__image img-reveal">
+          <div class="img-placeholder" style="aspect-ratio: 3/4;">Imagen — Trayectoria</div>
+        </div>
+        <div class="split__content">
+          <div class="split__label reveal">Trayectoria</div>
+          <h2 class="split__title reveal reveal--delay-1">Tradición en cada detalle</h2>
+          <p class="split__text reveal reveal--delay-2">
+            En cada proyecto de VR Construcciones, la esencia de nuestra trayectoria se hace
+            presente. Integrando metodologías probadas con una estética cuidada, nos aseguramos
+            de que cada estructura sea funcional, duradera y rica en calidad constructiva.
+          </p>
+          <a href="about.html" class="btn btn--secondary reveal reveal--delay-3">
+            Conocer más
+            <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Innovation Section -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="split split--reverse">
+        <div class="split__image img-reveal">
+          <div class="img-placeholder" style="aspect-ratio: 3/4;">Imagen — Innovación</div>
+        </div>
+        <div class="split__content">
+          <div class="split__label reveal">Innovación</div>
+          <h2 class="split__title reveal reveal--delay-1">Diseño que inspira</h2>
+          <p class="split__text reveal reveal--delay-2" style="color: var(--color-dark-text-secondary);">
+            La innovación es el motor de cada uno de nuestros proyectos. Adoptamos las últimas
+            tecnologías y materiales para ofrecer soluciones constructivas que no solo cumplen
+            con los más altos estándares, sino que redefinen lo que es posible en arquitectura.
+          </p>
+          <a href="projects.html" class="btn btn--secondary reveal reveal--delay-3">
+            Ver proyectos
+            <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Carousel -->
+  <section class="section">
+    <div class="container">
+      <div class="carousel">
+        <div class="carousel__header">
+          <h2 class="carousel__title reveal">Proyectos Destacados</h2>
+          <div class="carousel__nav reveal">
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <span class="carousel__counter">1 / 3</span>
+            <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="carousel__track">
+          <!-- Project 1 -->
+          <div class="carousel__slide">
+            <a href="projects.html" class="project-card">
+              <div class="project-card__image">
+                <div class="img-placeholder" style="aspect-ratio: 16/10;">Proyecto 1 — Imagen</div>
+              </div>
+              <div class="project-card__info">
+                <div>
+                  <h3 class="project-card__name">Residencia Del Parque</h3>
+                  <span class="project-card__location">Montevideo</span>
+                </div>
+                <span class="project-card__cta">
+                  Ver proyecto
+                  <span class="project-card__cta-arrow"></span>
+                </span>
+              </div>
+            </a>
+          </div>
+          <!-- Project 2 -->
+          <div class="carousel__slide">
+            <a href="projects.html" class="project-card">
+              <div class="project-card__image">
+                <div class="img-placeholder" style="aspect-ratio: 16/10;">Proyecto 2 — Imagen</div>
+              </div>
+              <div class="project-card__info">
+                <div>
+                  <h3 class="project-card__name">Torre Mirador</h3>
+                  <span class="project-card__location">Punta del Este</span>
+                </div>
+                <span class="project-card__cta">
+                  Ver proyecto
+                  <span class="project-card__cta-arrow"></span>
+                </span>
+              </div>
+            </a>
+          </div>
+          <!-- Project 3 -->
+          <div class="carousel__slide">
+            <a href="projects.html" class="project-card">
+              <div class="project-card__image">
+                <div class="img-placeholder" style="aspect-ratio: 16/10;">Proyecto 3 — Imagen</div>
+              </div>
+              <div class="project-card__info">
+                <div>
+                  <h3 class="project-card__name">Centro Comercial Vanguardia</h3>
+                  <span class="project-card__location">Canelones</span>
+                </div>
+                <span class="project-card__cta">
+                  Ver proyecto
+                  <span class="project-card__cta-arrow"></span>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Width Image -->
+  <div class="full-image parallax-img">
+    <div class="img-placeholder" style="aspect-ratio: 21/9;">Imagen panorámica — Obra en proceso</div>
+  </div>
+
+  <!-- Architecture / Building Section -->
+  <section class="section">
+    <div class="container">
+      <div class="content-block">
+        <div class="content-block__label">
+          <span class="text-caption text-secondary reveal">Arquitectura</span>
+        </div>
+        <div class="content-block__heading">
+          <h2 class="text-h2 reveal reveal--delay-1" data-animate="heading">
+            <span class="line"><span class="line-inner">Comprometidos con</span></span>
+            <span class="line"><span class="line-inner">la excelencia</span></span>
+            <span class="line"><span class="line-inner">constructiva</span></span>
+          </h2>
+        </div>
+        <div class="content-block__text">
+          <p class="text-body text-secondary reveal reveal--delay-2">
+            VR Construcciones se dedica a revolucionar la arquitectura a través de la calidad.
+            Cada uno de nuestros proyectos refleja nuestra dedicación al detalle y la innovación,
+            utilizando tecnologías de vanguardia y prácticas constructivas que establecen nuevos
+            estándares en la industria.
+          </p>
+          <br>
+          <p class="text-body text-secondary reveal reveal--delay-3">
+            Desde viviendas unifamiliares hasta desarrollos comerciales, cada espacio que creamos
+            está diseñado para perdurar, fusionando funcionalidad con una estética que marca la diferencia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section section--sm section--dark">
+    <div class="container">
+      <div class="stats" data-animate="stagger">
+        <div class="stat">
+          <div class="stat__number" data-count="150" data-suffix="+">0</div>
+          <div class="stat__label">Proyectos completados</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-count="5" data-suffix=" años">0</div>
+          <div class="stat__label">De experiencia</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-count="98" data-suffix="%">0</div>
+          <div class="stat__label">Clientes satisfechos</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-count="25" data-suffix="+">0</div>
+          <div class="stat__label">Profesionales</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="section">
+    <div class="container">
+      <div class="content-block" style="margin-bottom: var(--section-padding-sm);">
+        <div class="content-block__label">
+          <span class="text-caption text-secondary reveal">Servicios</span>
+        </div>
+        <div class="content-block__heading">
+          <h2 class="text-h2 reveal reveal--delay-1">Precisión en cada servicio</h2>
+        </div>
+      </div>
+
+      <div class="services-list">
+        <div class="service-item reveal">
+          <span class="service-item__num">01</span>
+          <div class="service-item__content">
+            <h3 class="service-item__title">Construcción Integral</h3>
+            <p class="service-item__description">
+              Desde la cimentación hasta los acabados finales, gestionamos cada etapa del proceso constructivo con rigor y profesionalismo.
+            </p>
+          </div>
+          <div class="service-item__arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </div>
+        </div>
+        <div class="service-item reveal reveal--delay-1">
+          <span class="service-item__num">02</span>
+          <div class="service-item__content">
+            <h3 class="service-item__title">Diseño Arquitectónico</h3>
+            <p class="service-item__description">
+              Creamos diseños que equilibran estética y funcionalidad, adaptados a las necesidades y visión de cada cliente.
+            </p>
+          </div>
+          <div class="service-item__arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </div>
+        </div>
+        <div class="service-item reveal reveal--delay-2">
+          <span class="service-item__num">03</span>
+          <div class="service-item__content">
+            <h3 class="service-item__title">Dirección de Obra</h3>
+            <p class="service-item__description">
+              Supervisión técnica y coordinación integral para garantizar que cada proyecto se ejecute según plazos, presupuestos y estándares de calidad.
+            </p>
+          </div>
+          <div class="service-item__arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </div>
+        </div>
+        <div class="service-item reveal reveal--delay-3">
+          <span class="service-item__num">04</span>
+          <div class="service-item__content">
+            <h3 class="service-item__title">Reformas &amp; Remodelaciones</h3>
+            <p class="service-item__description">
+              Transformamos espacios existentes con soluciones creativas que revitalizan y agregan valor a cada propiedad.
+            </p>
+          </div>
+          <div class="service-item__arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: clamp(2rem, 1rem + 3vw, 4rem);">
+        <a href="services.html" class="btn btn--primary reveal">
+          Todos los servicios
+          <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy / Quote Section -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="quote reveal">
+        <p class="quote__text">
+          "Creemos que cada espacio que construimos tiene el poder de transformar la vida
+          de las personas que lo habitan. Esa convicción guía cada decisión, cada detalle,
+          cada proyecto."
+        </p>
+        <span class="quote__author">— VR Construcciones</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div class="cta">
+        <h2 class="cta__title reveal" data-animate="heading">
+          <span class="line"><span class="line-inner">Hacé realidad</span></span>
+          <span class="line"><span class="line-inner">tu proyecto</span></span>
+        </h2>
+        <p class="cta__text reveal reveal--delay-1">
+          VR Construcciones combina innovación y calidad para crear espacios que se
+          destacan y perduran. Traé tu visión y construyamos juntos algo extraordinario.
+        </p>
+        <div class="cta__buttons reveal reveal--delay-2">
+          <a href="contact.html" class="btn btn--primary">
+            Contactanos
+            <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="projects.html" class="btn btn--secondary">
+            Ver proyectos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top container">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">VR Construcciones</a>
+        <p class="footer__tagline">
+          Comprometidos con la excelencia en arquitectura y construcción.
+          Creamos espacios que trascienden el tiempo.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="projects.html">Proyectos</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <p>
+          <a href="mailto:info@vrconstrucciones.com">info@vrconstrucciones.com</a><br>
+          <a href="tel:+59891234567">+598 91 234 567</a>
+        </p>
+        <br>
+        <h4>Horario</h4>
+        <p>Lunes a Viernes<br>9:00 – 18:00</p>
+      </div>
+      <div class="footer__col">
+        <h4>Ubicación</h4>
+        <p>Maldonado, Uruguay</p>
+        <br>
+        <h4>Seguinos</h4>
+        <ul>
+          <li><a href="#" target="_blank">Instagram</a></li>
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <span class="footer__copy">&copy;2025 VR Construcciones — Todos los derechos reservados</span>
+      <a href="#" class="footer__back-top">
+        Volver arriba
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script>gsap.registerPlugin(ScrollTrigger);</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

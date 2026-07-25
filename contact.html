@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es" class="lenis">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — VR Construcciones</title>
+  <meta name="description" content="Contactá a VR Construcciones para iniciar tu próximo proyecto de arquitectura y construcción.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">VR Construcciones</a>
+    <span class="nav__est">EST — 2024</span>
+    <button class="nav__menu-btn" aria-label="Abrir menú">
+      <span>Menú</span>
+      <div class="nav__menu-btn-lines">
+        <span class="nav__menu-btn-line"></span>
+        <span class="nav__menu-btn-line"></span>
+      </div>
+    </button>
+  </nav>
+
+  <!-- Menu Overlay -->
+  <div class="menu-overlay">
+    <div class="menu-overlay__content container">
+      <nav class="menu-overlay__nav">
+        <a href="index.html" class="menu-overlay__link"><span class="menu-overlay__link-num">01</span> Inicio</a>
+        <a href="about.html" class="menu-overlay__link"><span class="menu-overlay__link-num">02</span> Nosotros</a>
+        <a href="projects.html" class="menu-overlay__link"><span class="menu-overlay__link-num">03</span> Proyectos</a>
+        <a href="services.html" class="menu-overlay__link"><span class="menu-overlay__link-num">04</span> Servicios</a>
+        <a href="contact.html" class="menu-overlay__link"><span class="menu-overlay__link-num">05</span> Contacto</a>
+      </nav>
+      <div class="menu-overlay__info">
+        <div class="menu-overlay__info-group">
+          <h4>Contacto</h4>
+          <p><a href="mailto:info@vrconstrucciones.com">info@vrconstrucciones.com</a><br><a href="tel:+59891234567">+598 91 234 567</a></p>
+        </div>
+        <div class="menu-overlay__info-group">
+          <h4>Oficina</h4>
+          <p>Maldonado, Uruguay</p>
+        </div>
+        <div class="menu-overlay__info-group">
+          <h4>Horario</h4>
+          <p>Lunes a Viernes, 9:00 – 18:00</p>
+        </div>
+        <div class="menu-overlay__info-group">
+          <h4>Seguinos</h4>
+          <div class="menu-overlay__socials">
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Hero -->
+  <section class="section" style="padding-top: clamp(10rem, 8rem + 8vw, 16rem);">
+    <div class="container">
+      <div class="content-block">
+        <div class="content-block__label">
+          <span class="text-caption text-secondary reveal">Contacto</span>
+        </div>
+        <div class="content-block__heading">
+          <h1 class="text-h1 font-serif reveal reveal--delay-1" data-animate="heading">
+            <span class="line"><span class="line-inner">Iniciá tu</span></span>
+            <span class="line"><span class="line-inner">proyecto</span></span>
+          </h1>
+        </div>
+        <div class="content-block__text">
+          <p class="text-body text-secondary reveal reveal--delay-2">
+            Contanos sobre tu visión y trabajemos juntos para hacerla realidad.
+            Completá el formulario y nos pondremos en contacto a la brevedad.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="section section--sm">
+    <div class="container">
+      <div class="grid">
+        <!-- Form -->
+        <div style="grid-column: 1 / 7;" class="reveal">
+          <form class="form">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="name">Nombre</label>
+                <input class="form__input" type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" type="email" id="email" name="email" placeholder="tu@email.com" required>
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="company">Empresa</label>
+              <input class="form__input" type="text" id="company" name="company" placeholder="Nombre de la empresa (opcional)">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="project-type">Tipo de proyecto</label>
+              <select class="form__select" id="project-type" name="project-type" required>
+                <option value="" disabled selected>Seleccioná una opción</option>
+                <option value="construccion">Construcción nueva</option>
+                <option value="reforma">Reforma &amp; Remodelación</option>
+                <option value="diseno">Diseño arquitectónico</option>
+                <option value="direccion">Dirección de obra</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="message">Mensaje</label>
+              <textarea class="form__textarea" id="message" name="message" placeholder="Contanos sobre tu proyecto..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">
+              Enviar mensaje
+              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div style="grid-column: 8 / 11;" class="reveal reveal--delay-2">
+          <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+            <div>
+              <h4 class="text-caption text-secondary" style="margin-bottom: 0.75rem;">Email</h4>
+              <a href="mailto:info@vrconstrucciones.com" class="text-body" style="font-weight: 500;">info@vrconstrucciones.com</a>
+            </div>
+            <div>
+              <h4 class="text-caption text-secondary" style="margin-bottom: 0.75rem;">Teléfono</h4>
+              <a href="tel:+59891234567" class="text-body" style="font-weight: 500;">+598 91 234 567</a>
+            </div>
+            <div>
+              <h4 class="text-caption text-secondary" style="margin-bottom: 0.75rem;">Dirección</h4>
+              <p class="text-body">Maldonado, Uruguay</p>
+            </div>
+            <div>
+              <h4 class="text-caption text-secondary" style="margin-bottom: 0.75rem;">Horario</h4>
+              <p class="text-body">Lunes a Viernes<br>9:00 – 18:00</p>
+            </div>
+            <div>
+              <h4 class="text-caption text-secondary" style="margin-bottom: 0.75rem;">Seguinos</h4>
+              <div style="display: flex; gap: 1.5rem;">
+                <a href="#" target="_blank" class="text-small">Instagram</a>
+                <a href="#" target="_blank" class="text-small">Facebook</a>
+                <a href="#" target="_blank" class="text-small">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <div class="full-image">
+    <div class="img-placeholder" style="aspect-ratio: 21/9; min-height: 400px;">Mapa — Maldonado, Uruguay</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top container">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">VR Construcciones</a>
+        <p class="footer__tagline">Comprometidos con la excelencia en arquitectura y construcción. Creamos espacios que trascienden el tiempo.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="projects.html">Proyectos</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <p><a href="mailto:info@vrconstrucciones.com">info@vrconstrucciones.com</a><br><a href="tel:+59891234567">+598 91 234 567</a></p>
+        <br>
+        <h4>Horario</h4>
+        <p>Lunes a Viernes<br>9:00 – 18:00</p>
+      </div>
+      <div class="footer__col">
+        <h4>Ubicación</h4>
+        <p>Maldonado, Uruguay</p>
+        <br>
+        <h4>Seguinos</h4>
+        <ul>
+          <li><a href="#" target="_blank">Instagram</a></li>
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <span class="footer__copy">&copy;2025 VR Construcciones — Todos los derechos reservados</span>
+      <a href="#" class="footer__back-top">
+        Volver arriba
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script>gsap.registerPlugin(ScrollTrigger);</script>
+  <script src="js/main.js"></script>
+</body>
+</html>
