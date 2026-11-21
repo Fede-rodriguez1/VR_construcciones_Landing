@@ -600,7 +600,7 @@ ul, ol {
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 var(--padding-x);
-  padding-bottom: clamp(3rem, 2rem + 4vw, 6rem);
+  padding-bottom: clamp(2rem, 1.5rem + 1.5vw, 3.5rem);
   position: relative;
   overflow: hidden;
 }
@@ -608,6 +608,8 @@ ul, ol {
 .hero__bg {
   position: absolute;
   inset: 0;
+  /* Extends above the hero so the house rides higher and the title sits on the lawn */
+  top: -18%;
   z-index: -1;
 }
 
@@ -615,8 +617,8 @@ ul, ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Anchored low so the house sits high and the title falls on the grass */
-  object-position: 50% 100%;
+  /* The house sits in the upper half; the lawn below holds the title */
+  object-position: 50% 40%;
   transform: scale(1.1);
 }
 
@@ -649,7 +651,8 @@ ul, ol {
 
 .hero__title {
   font-family: var(--font-serif);
-  font-size: var(--fs-display);
+  /* Also capped by viewport height so short laptop screens keep the house clear */
+  font-size: min(var(--fs-display), 8.5vh);
   font-weight: 300;
   line-height: 0.9;
   color: #fff;
@@ -2447,10 +2450,6 @@ ul, ol {
     display: none;
   }
 
-  /* Portrait screens: extend the photo upward so the house sits above the title */
-  .hero__bg {
-    top: -22%;
-  }
 
   .content-block__label,
   .content-block__heading {
