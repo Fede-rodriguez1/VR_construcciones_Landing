@@ -561,6 +561,22 @@ function initBackToTop() {
   });
 }
 
+// --- Gallery "Ver más fotos" ---
+function initGalleryMore() {
+  const btn = document.querySelector('.gallery__more-btn');
+  const gallery = document.querySelector('.gallery');
+  if (!btn || !gallery) return;
+
+  btn.addEventListener('click', () => {
+    gallery.classList.add('is-expanded');
+    btn.setAttribute('aria-expanded', 'true');
+    btn.parentElement.hidden = true;
+    if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
+    // The newly shown photos still need their reveal
+    gallery.querySelectorAll('.gallery__item--extra').forEach((el) => el.classList.add('is-visible'));
+  });
+}
+
 // --- Project Gallery Lightbox ---
 function initLightbox() {
   const dialog = document.querySelector('.lightbox');
@@ -745,6 +761,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initBackToTop();
   initLightbox();
+  initGalleryMore();
   initHeroVideo();
   initWorksSlider();
 });

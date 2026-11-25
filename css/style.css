@@ -2264,6 +2264,21 @@ ul, ol {
   filter: brightness(1.06);
 }
 
+/* Long galleries show the first photos and reveal the rest on demand */
+.gallery__item--extra {
+  display: none;
+}
+
+.gallery.is-expanded .gallery__item--extra {
+  display: block;
+}
+
+.gallery__more {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(2rem, 1.5rem + 2vw, 3.5rem);
+}
+
 /* Lightbox */
 .lightbox {
   width: 100vw;
