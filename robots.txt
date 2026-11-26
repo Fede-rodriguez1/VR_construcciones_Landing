@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vr-construcciones.pages.dev/sitemap.xml
+Sitemap: https://vrconstrucciones.uy/sitemap.xml
