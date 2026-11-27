@@ -454,29 +454,22 @@ ul, ol {
   transform-origin: center;
 }
 
-.nav__menu-btn-line:first-child {
+/* Classic three-line icon that turns into an X when the menu opens.
+   Lines are 1.5px tall with a 5px gap, so each one sits 6.5px from the next. */
+.nav__menu-btn-line {
   width: 100%;
 }
 
-.nav__menu-btn-line:last-child {
-  width: 60%;
-  transition: width var(--duration-fast) var(--ease-out),
-              transform var(--duration-fast) var(--ease-out),
-              opacity var(--duration-fast) var(--ease-out);
+.nav.menu-open .nav__menu-btn-line:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
 }
 
-.nav__menu-btn:hover .nav__menu-btn-line:last-child {
-  width: 100%;
+.nav.menu-open .nav__menu-btn-line:nth-child(2) {
+  opacity: 0;
 }
 
-/* Menu open state */
-.nav.menu-open .nav__menu-btn-line:first-child {
-  transform: rotate(45deg) translateY(4.5px);
-}
-
-.nav.menu-open .nav__menu-btn-line:last-child {
-  width: 100%;
-  transform: rotate(-45deg) translateY(-4.5px);
+.nav.menu-open .nav__menu-btn-line:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
 }
 
 .nav.menu-open {
