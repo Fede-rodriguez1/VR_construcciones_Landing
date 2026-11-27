@@ -2358,6 +2358,22 @@ ul, ol {
   transform: translateY(-50%);
 }
 
+/* Contact page Instagram icon */
+.contact-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-left: -0.5rem;
+  color: var(--color-text);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.contact-social:hover {
+  color: var(--color-brand);
+}
+
 /* --- WhatsApp floating button --- */
 .wa-fab {
   position: fixed;
