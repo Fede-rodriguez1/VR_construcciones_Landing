@@ -5,13 +5,13 @@
 /* --- CSS Custom Properties --- */
 :root {
   /* Colors - Light Theme (VR Construcciones Brand) */
-  --color-bg: #F4EDDC;
+  --color-bg: #F5F2EC;
   --color-text: #111111;
   --color-text-secondary: #5C6367; /* hormigón oscurecido para 4.5:1 sobre crema */
   --color-brand: #175E70;
   --color-brand-hover: #0E8A82;
   --color-border: #d4cfc7;
-  --color-surface: #ebe5d5;
+  --color-surface: #ECE8E0;
 
   /* Secondary Colors */
   --color-amarillo: #E9A93D;
