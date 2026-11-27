@@ -1692,8 +1692,6 @@ ul, ol {
 
 /* Developer credit: a diamond that turns and a shine that crosses the word */
 .footer__credit {
-  --cast-base: var(--color-dark-text-secondary);
-  --cast-shine: var(--color-amarillo);
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
@@ -1706,55 +1704,68 @@ ul, ol {
 }
 
 .footer__credit-link {
+  display: inline-flex;
+  align-items: center;
   white-space: nowrap;
 }
 
-.cast-marca {
+/* Cast logo, as on cast.uy: the diamond morphs into the icon and the
+   circles turn on hover (js/cast-logo.js). Without JS it stays a diamond. */
+.cast-logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.45em;
-  margin-left: 0.25em;
-  font-weight: 700;
-  background: linear-gradient(100deg, var(--cast-base) 0 40%, var(--cast-shine) 50%, var(--cast-base) 60% 100%);
-  background-size: 300% 100%;
-  background-position: 100% 0;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: cast-shine 4.5s ease-in-out infinite;
+  gap: 0.31em;
+  margin-left: 1.1em;
+  font-size: 1.05rem;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: var(--color-dark-text);
 }
 
-.cast-marca i {
-  width: 0.62em;
-  height: 0.62em;
-  border: 1.5px solid var(--cast-shine);
+.cast-logo i {
+  width: 9px;
+  height: 9px;
+  background: #d4ff4f;
+  border-radius: 2px;
   transform: rotate(45deg);
-  transition: transform 0.5s ease;
-  animation: cast-diamond 4.5s ease-in-out infinite;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.footer__credit-link:hover .cast-marca i,
-.footer__credit-link:focus-visible .cast-marca i {
+.cast-logo-link:hover .cast-logo i:not(.icono) {
   transform: rotate(225deg);
-  background: var(--cast-shine);
-  animation: none;
 }
 
-@keyframes cast-shine {
-  0%, 55% { background-position: 100% 0; }
-  85%, 100% { background-position: 0 0; }
+.cast-logo i.icono {
+  width: 1.12em;
+  height: 1.5em;
+  background: none;
+  border-radius: 0;
+  transform: none;
+  transition: none;
 }
 
-@keyframes cast-diamond {
-  0%, 55% { transform: rotate(45deg); }
-  85%, 100% { transform: rotate(225deg); }
+.cast-logo i.icono svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .cast-marca,
-  .cast-marca i {
-    animation: none;
-  }
+.cast-logo .giro {
+  transform-box: view-box;
+  transform-origin: 44.81px 97px;
+  transition: transform 1.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.cast-logo > span {
+  display: block;
+  width: 2.86em;
+  height: 1.11em;
+  position: relative;
+  top: -0.09em;
+  background: currentColor;
+  -webkit-mask: url(/img/cast-wordmark.svg) center / contain no-repeat;
+  mask: url(/img/cast-wordmark.svg) center / contain no-repeat;
 }
 
 .footer__socials {
