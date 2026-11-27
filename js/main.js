@@ -524,29 +524,36 @@ function initAccordion() {
 }
 
 // --- Contact Form ---
+// Sends the form as a pre-written WhatsApp message to the company number
 function initContactForm() {
   const form = document.querySelector('.form');
   if (!form) return;
 
+  const number = form.dataset.whatsapp;
+  const field = (name) => {
+    const el = form.elements[name];
+    if (!el) return '';
+    if (el.tagName === 'SELECT') return el.value ? el.options[el.selectedIndex].text : '';
+    return el.value.trim();
+  };
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
+    if (!number) return;
 
-    const btn = form.querySelector('.btn');
-    const label = btn.querySelector('.btn__label') || btn;
-    const originalText = label.textContent;
-    label.textContent = 'Enviando...';
-    btn.disabled = true;
+    const lines = [
+      'Hola VR Construcciones, les escribo desde la web.',
+      '',
+      `Nombre: ${field('name')}`,
+      `Email: ${field('email')}`,
+      field('company') ? `Empresa: ${field('company')}` : null,
+      `Tipo de proyecto: ${field('project-type')}`,
+      '',
+      field('message'),
+    ].filter((line) => line !== null);
 
-    // TODO: connect to a real form service; this still only simulates sending
-    setTimeout(() => {
-      label.textContent = 'Enviado!';
-      form.reset();
-
-      setTimeout(() => {
-        label.textContent = originalText;
-        btn.disabled = false;
-      }, 2000);
-    }, 1500);
+    const url = `https://wa.me/${number}?text=${encodeURIComponent(lines.join('\n'))}`;
+    window.open(url, '_blank', 'noopener');
   });
 }
 
