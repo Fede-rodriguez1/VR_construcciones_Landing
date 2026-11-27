@@ -460,6 +460,19 @@ ul, ol {
   width: 100%;
 }
 
+/* The bottom line starts shorter and stretches on hover, as in the original icon */
+.nav__menu-btn-line:nth-child(3) {
+  width: 60%;
+  transition: width var(--duration-fast) var(--ease-out),
+              transform var(--duration-fast) var(--ease-out),
+              opacity var(--duration-fast) var(--ease-out);
+}
+
+.nav__menu-btn:hover .nav__menu-btn-line:nth-child(3),
+.nav.menu-open .nav__menu-btn-line:nth-child(3) {
+  width: 100%;
+}
+
 .nav.menu-open .nav__menu-btn-line:nth-child(1) {
   transform: translateY(6.5px) rotate(45deg);
 }
